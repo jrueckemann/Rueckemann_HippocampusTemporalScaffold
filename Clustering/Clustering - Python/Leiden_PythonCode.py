@@ -12,6 +12,8 @@ from scipy.io import loadmat as scipy_loadmat
 
 
 # Import Matlab HDF5 file (v7.3) pseudopopulation ('PP') data matrix (trials X neurons X bins)
+#data_path = 'C:/Users/MyComp/Desktop/pseudotrials_example_L_R.mat'
+#data = load_mat(data_path)
 data = load_mat()
 data = data['PP']
 
@@ -26,7 +28,7 @@ outdict_True = build_null_knn_graphs_parallel(data,integer_offset=no_rotation,sa
 ## Null: Determine k-NN affinity graphs for pseudopopulation data with each neuron independently rotated WRT predictor bin
 
 # Import standard Matlab file (v7.0) of rotation ('RRR') matrix (iterations X neurons)
-rotmat_path = 'C:/Users/MyComp/Desktop/rotmat_August27.mat' #replace w/ local path
+rotmat_path = 'C:/Users/MyComp/Desktop/rotmat_example.mat' #replace w/ local path
 rotmat = scipy_loadmat(rotmat_path)
 rotmat = rotmat['RRR']
 
