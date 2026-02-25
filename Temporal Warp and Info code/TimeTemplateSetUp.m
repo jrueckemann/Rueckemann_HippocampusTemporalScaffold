@@ -10,6 +10,3 @@ timetemplate.bindur=0.25;
 timetemplate.favorknot=nan(size(timetemplate.duration));
 timetemplate.knot=repmat({[ 0 0 ]}, size(timetemplate.duration));
 timetemplate.EventBounds=repmat({[-2 2]},size(timetemplate.EventName));
-timetemplate.EventNameF=...
-    [{'TrialStart'} {'LastMajorTurn'} {'Reward'}];
-timetemplate.EventBoundsF=repmat({[-2 2]},size(timetemplate.EventNameF));
