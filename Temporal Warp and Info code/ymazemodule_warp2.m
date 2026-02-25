@@ -20,7 +20,7 @@ validScalarPosNum=@(x) isnumeric(x) && isscalar(x) && (x > 0);
 validVector=@(x) isnumeric(x) && isvector(x);
 validCellVector=@(x) iscell(x) && all(cellfun(@(y) isvector(y),x,'uni',1));
 
-addParameter(p,'dt',0.25,validScalarPosNum);
+addParameter(p,'dt',0.05,validScalarPosNum);
 addParameter(p,'maxtrial',25,validScalarPosNum);
 addParameter(p,'bins2d',{225:0.5:265;195:0.5:235},validCellVector);
 addParameter(p,'TTidx',2,validScalarPosNum); %TrialData column. Col 1=correct path; Col 2=chosen path
