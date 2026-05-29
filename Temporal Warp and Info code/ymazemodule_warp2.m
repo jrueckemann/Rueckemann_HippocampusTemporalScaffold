@@ -191,7 +191,6 @@ for m=1:n_mazes
         badmaze(m)=true;
         continue
     end
-    %POSSIBLY ADD SPIKES AS AN INPUT FOR MORE PRECISE INTERPOLATION
 
 
     %Prepare trial type designations    
